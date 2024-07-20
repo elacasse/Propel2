@@ -251,8 +251,6 @@ class ObjectBuilder extends AbstractObjectBuilder
 
         if ($this->getBuildProperty('generator.objectModel.addClassLevelComment')) {
             $script .= "
-use AllowDynamicProperties;
-
 /**
  * Base class that represents a row from the '$tableName' table.
  *
@@ -272,7 +270,7 @@ use AllowDynamicProperties;
         }
 
         $script .= "
-#[AllowDynamicProperties] abstract class " . $this->getUnqualifiedClassName() . $parentClass . ' implements ActiveRecordInterface ';
+abstract class " . $this->getUnqualifiedClassName() . $parentClass . ' implements ActiveRecordInterface ';
 
         $interface = $this->getInterface();
         if ($interface) {
