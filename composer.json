@@ -66,8 +66,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0-dev",
-            "dev-templates-fix": "2.0-dev"
+            "dev-master": "2.0-dev"
         }
     },
     "config": {
